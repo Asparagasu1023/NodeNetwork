@@ -1,9 +1,13 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
-VisualStudioVersion = 17.12.35527.113 d17.12
+VisualStudioVersion = 17.12.35527.113
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ExampleCodeGenApp", "ExampleCodeGenApp\ExampleCodeGenApp.csproj", "{735A8308-61B6-4B0D-B664-53EF35D4FA5C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NodeNetwork", "NodeNetwork\NodeNetwork.csproj", "{34116211-4DB4-4ABD-8378-E792191A8362}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NodeNetworkToolKit", "NodeNetworkToolKit\NodeNetworkToolKit.csproj", "{454D59E1-7F8D-4AEA-A39E-BCB877FD68D7}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +19,14 @@ Global
 		{735A8308-61B6-4B0D-B664-53EF35D4FA5C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{735A8308-61B6-4B0D-B664-53EF35D4FA5C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{735A8308-61B6-4B0D-B664-53EF35D4FA5C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{34116211-4DB4-4ABD-8378-E792191A8362}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{34116211-4DB4-4ABD-8378-E792191A8362}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{34116211-4DB4-4ABD-8378-E792191A8362}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{34116211-4DB4-4ABD-8378-E792191A8362}.Release|Any CPU.Build.0 = Release|Any CPU
+		{454D59E1-7F8D-4AEA-A39E-BCB877FD68D7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{454D59E1-7F8D-4AEA-A39E-BCB877FD68D7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{454D59E1-7F8D-4AEA-A39E-BCB877FD68D7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{454D59E1-7F8D-4AEA-A39E-BCB877FD68D7}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
