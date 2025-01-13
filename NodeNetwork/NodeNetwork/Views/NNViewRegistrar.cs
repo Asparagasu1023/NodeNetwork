@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace NodeNetwork.Views
 {
-    public sealed class NNViewRegistar
+    public sealed class NNViewRegistrar
     {
         //Locatorが登録される前でも登録可能
         private static readonly List<Tuple<Func<object>, Type>> PendingRegistrations = new List<Tuple<Func<object>, Type>>();

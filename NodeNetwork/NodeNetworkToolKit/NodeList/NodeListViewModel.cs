@@ -22,7 +22,7 @@ namespace NodeNetworkToolKit.NodeList
         static NodeListViewModel()
         {
             //viewの生成処理と対応するViwModelを登録
-            NNViewRegistar.AddRegistration(() => new NodeListView(), typeof(IViewFor<NodeListViewModel>));
+            NNViewRegistrar.AddRegistration(() => new NodeListView(), typeof(IViewFor<NodeListViewModel>));
 
         }
 
@@ -124,15 +124,16 @@ namespace NodeNetworkToolKit.NodeList
                 .AsObservableList();
         }
 
-            ///// <summary>
-            ///// Adds a new node type to the list.
-            ///// Every time a node is added to a network from this list, the factory function will be called to create a new instance of the viewmodel type.
-            ///// </summary>
-            ///// <typeparam name="T">The subtype of NodeViewModel to add to the list.</typeparam>
-            ///// <param name="factory">The factory function to create a new instance of T</param>
-            //public void AddNodeType<T>(Func<T> factory) where T : NodeViewModel
-            //{
-            //    NodeTemplates.Add(new NodeTemplate(factory));
-            //}
+        /// <summary>
+        /// Adds a new node type to the list.
+        /// Every time a node is added to a network from this list, the factory function will be called to create a new instance of the viewmodel type.
+        /// </summary>
+        /// <typeparam name="T">The subtype of NodeViewModel to add to the list.</typeparam>
+        /// <param name="factory">The factory function to create a new instance of T</param>
+        public void AddNodeType<T>(Func<T> factory) where T : NodeViewModel
+        {
+            NodeTemplates.Add(new NodeTemplate(factory));
         }
+
+    }
 }

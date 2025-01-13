@@ -13,7 +13,7 @@ namespace ExampleCodeGenApp
         protected override void OnStartup(StartupEventArgs e)
         {
             base.OnStartup(e);
-            NNViewRegistar.RegisterSplat();
+            NNViewRegistrar.RegisterSplat();
         }
     }
 
